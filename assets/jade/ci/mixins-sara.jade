@@ -1,0 +1,16 @@
+mixin bloque(titular,imagen,nombre,frase)
+ .col-md-5.text-center
+  p Lunes 14 de julio de 2015
+  h3= titular
+  .cuadrado-mix
+   .imagen-mix.pull-left
+    img(src=imagen)
+   .texto-mix
+    p= nombre
+    h5= frase 
+
+mixin blogs
+ .row
+  +bloque('El gol de la muerte','../image/blog_avatar_01.jpg','Blog','Y tú... ¿Ya hiciste click?')
+  +bloque('Dios a muerto... tengo las manos cubiertas de sangre','../image/blog_avatar_02.jpg','Blog','Educando con Amor Firme')
+  +bloque('¿Cuál es tu queso favorito?','../image/blog_avatar_03.jpg','Blog','Moda entre Tendencia')
