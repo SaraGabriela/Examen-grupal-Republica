@@ -64,14 +64,53 @@ html(lang='es-PE')
       .row.logo  
        .col-md-5
         img.pull-left(src="../image/logo-la-republica.jpg") 
-       .col-md-3.base-domingo.text-center
-        block domingo
-         h6 Domingo            
-        .caja-domingo
-         p DOMINGO     
        .col-md-3
+        .base-domingo.text-center
+         block domingo
+          h6 Domingo            
+         .caja-domingo
+          p.fs-10 DOMINGO     
+       .col-md-4
+        .gustavo.ml-negativo.text-center
+         img.pull-left(src="../image/img_editorial_text.jpg")
+         .gustavo_dentro.text-center.inline-block
+          h6 La corrupción, los orígenes
+          p.fs-10 por: Gustavo Mohme Llona
+         img.pull-right.inline-block(src="../image/img_author.jpg")           
       .row.navega-rojo
+       ul.list-inline
+        li
+         a.fs-11(href="#") POLÍTICA
+        li
+         a.fs-11(href="#") ECONOMÍA
+        li
+         a.fs-11(href="#") SOCIEDAD
+        li
+         a.fs-11(href="#") ELECC. REGIONALES
+        li
+         a.fs-11(href="#") DEPORTES
+        li
+         a.fs-11(href="#") CHAMPIONS L.
+        li
+         a.fs-11(href="#") ESPECTÁCULOS
+        li
+         a.fs-11(href="#") ED.IMPRESA
+        li
+         a.fs-11(href="#") REGIONALES
+        li
+         a.fs-11(href="#") MÁS SECCIONES                                                                                        
       .row.temas
+       ul.list-inline
+        li.fs-11.pt-sans TEMAS DEL DíA
+        li.fs-11 Globos de oro
+        li.fs-11 Youtube
+        li.fs-11 PNP
+        li.fs-11 Charlie Hebdo
+        li.fs-11 FC Barcelona
+        li.fs-11 Alianza Lima
+        li.fs-11 Balón de Oro
+        li.fs-11 Alianza Lima
+        li.fs-11 Balón                                                                        
       .row
        img.img-responsive(src="../image/banner-header.jpg")
       block content          
