@@ -1,42 +1,59 @@
-doctype html
-html(lang='es-PE')
-  head
-    meta(charset='UTF-8')
-    title Home
-    link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
-    link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', type='text/css', href='../css/dist/font-awesome.min.css')
-    link(rel='stylesheet', type='text/css', href='../css/dist/bootstrap.min.css')
-    link(rel='stylesheet', type='text/css', href='../css/dist/slick.css')
-    link(rel='stylesheet', type='text/css', href='../css/dist/slick-theme.css')
-    link(rel='stylesheet', type='text/css', href='../css/main.css')
-    script(src='http://code.jquery.com/jquery-1.11.2.min.js')
-    script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
-    script(type='text/javascript', src='js/bootstrap.min.js')
-    script(type='text/javascript', src='js/slick.min.js')
-    script(type='text/javascript', src='js/bootstrap-hover-dropdown.min.js')
-    script(type='text/javascript', src='js/modernizr.custom.68172.js')
-    script(type='text/javascript', src='js/respond.js')
-  body
-    include ci/mixin_p.jade
-    .container
-        .row
-            h1 GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANAggggdsds
-            .col-md-6
-            .col-md-6
-                .row
-                .row
-        .row
-        .row
-            .col-md-8
-                .row
-                    .col-md-6
-                        +noticias('nombre','../image/img_especiales.jpg','pattddfy','hofffla')
-                    .col-md-6
-                        +noticias('nombres','../image/img_especiales.jpg','ddfds','hosssla')
-                .row
-                    .col-md-6
-                        +noticias('nombrde','../image/img_especiales.jpg','padftty','hosssla')
-                    .col-md-6
-                        +noticias('nombfgrgre','../image/img_especiales.jpg','pdfdsatty','holsssa')
-            .col-md-4
+include ci/mixin_p.jade
+extends ci/base.jade
+block title
+ title home
+block domingo
+ h6 HABLA LA LIDERESA DEL NACIONALISMO
+block content
+    .row
+        h1.text-center GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA
+        ul.list-inline.list-unstyled.text-center
+            li
+                a(href="#")
+                    img(src="../image/redes.png")
+            li
+                img(src="../image/bullet.gif")
+            li
+                p Hace 12 minutos
+            li
+                img(src="../image/bullet.gif")
+            li
+                p POLITICA
+
+        .col-md-6
+            +noticias('','../image/img_especiales.jpg','pattddfy')
+        .col-md-6
+            .row
+                +noticias('','../image/img_especiales.jpg','pattddfy')
+            .row
+                +noticias('','../image/img_especiales.jpg','pattddfy')
+    .row.text-center
+        .columnistas
+            p COLUMNISTAS
+        ul.list-inline.list-unstyled
+            li
+                +foto_colum
+            li
+                +foto_colum
+            li
+                +foto_colum
+    .row
+        .col-md-8
+            .row
+                .col-md-6
+                    +noticias('nombre','../image/img_especiales.jpg','pattddfy','hofffla')
+                .col-md-6
+                    +noticias('nombres','../image/img_especiales.jpg','ddfds','hosssla')
+            .row
+                .col-md-6
+                    +noticias('nombrde','../image/img_especiales.jpg','padftty','hosssla')
+                .col-md-6
+                    +noticias('nombfgrgre','../image/img_especiales.jpg','pdfdsatty','holsssa')
+            .row
+                a(href="#") 
+                    h6 ULTIMAS NOTICIAS
+                    img(src="../image/double-arrow-bottom.png") 
+                +ultimas
+                
+        .col-md-4
+            img(src="../image/banner-aside-home.jpg")

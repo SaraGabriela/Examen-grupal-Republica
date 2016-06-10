@@ -1,6 +1,43 @@
 mixin noticias(titulo,imgn,text,resena)
-	h6 = titulo
+	h6=titulo
 	.contenedor_noticias
 		img(src=imgn)
 		h6=text
 	p=resena
+mixin foto_columnista(img,text,texts)
+	.contenedor_columnistas
+		img(src=img)
+		p=text
+		h6=texts
+mixin foto_colum
+	+foto_columnista('../image/img-columnistas.jpg','Mario Vargas LLosa','Megarrenuncia apulpinante')
+	+foto_columnista('../image/img_blogueros.jpg','Agusto Alvarez Rodrich','Megarrenuncia apulpinante')
+
+mixin ultimas_n(fecha,titulo,img,lead,redesp,punto1,comentario,punto2,clase,punto3,simbolo)
+	.row
+		p=fecha
+		h6=titulo
+		.col-md-4
+			img(src=img)
+		.col-md-8
+			p=lead
+			ul.list-inline.list-unstyled
+				li
+					img(src=redesp)
+				li
+					img(src=punto1)
+				li
+					img(src=comentario)
+				li
+					img(src=punto2)
+				li
+					p=clase
+				li
+					img(src=punto3)
+				li
+					img(src=simbolo)
+
+mixin ultimas
+	+ultimas_n('21 de mayo','21 de mayo','../image/img-columnistas.jpg','Mario Vargas LLosa','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','espectaculos','../image/bullet.gif','../image/bullet.gif')
+	+ultimas_n('21 de mayo','21 de mayo','../image/img-columnistas.jpg','Mario Vargas LLosa','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','espectaculos','')
+	+ultimas_n('21 de mayo','21 de mayo','../image/img-columnistas.jpg','Mario Vargas LLosa','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','espectaculos','../image/bullet.gif','')
