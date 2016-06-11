@@ -41,3 +41,38 @@ mixin ultimas
 	+ultimas_n('21 de mayo','21 de mayo','../image/img-columnistas.jpg','Mario Vargas LLosa','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','espectaculos','../image/bullet.gif','../image/bullet.gif')
 	+ultimas_n('21 de mayo','21 de mayo','../image/img-columnistas.jpg','Mario Vargas LLosa','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','espectaculos','')
 	+ultimas_n('21 de mayo','21 de mayo','../image/img-columnistas.jpg','Mario Vargas LLosa','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','espectaculos','../image/bullet.gif','')
+mixin aweita(foto,descripcion)
+	.row
+		.col-md-5
+			img(src=foto)
+		.col-md-7
+			p=descripcion
+mixin clases
+	+aweita('../image/img-columnistas.jpg','dsd dfs  fgf fb fb dsd dfs  fgf fb fb sdfs dsd dfs  fgf fb fb sdfssdfs')
+	+aweita('../image/img-columnistas.jpg','dsd dfs  fgf fb fb dsd dfs  fgf fb fb sdfs dsd dfs  fgf fb fb sdfssdfs')
+	+aweita('../image/img-columnistas.jpg','dsd dfs  fgf fb fb dsd dfs  fgf fb fb sdfs dsd dfs  fgf fb fb sdfssdfs')
+mixin fotos(foto,titulo)
+	.row
+		img(src=foto)
+		div
+			p=titulo
+mixin blogueros(titu,tex)
+	.row
+		.col-md-3
+			img(src='../image/img_blogueros.jpg')
+		.col-md-9
+			a
+				p=titu
+			h6=tex		
+mixin bloguer
+	+blogueros('Augusto Alvarez','Charly Hebdo historia que no debe repetirse')
+	+blogueros('Augusto Alvarez','El unico  pulpin es Humala')
+	+blogueros('Augusto Alvarez','Charly Hebdo historia que no debe repetirse')
+	+blogueros('Augusto Alvarez','El unico  pulpin es Humala')
+mixin periodicos(periodico,descrip,zona)
+	.col-md-6
+		img(src=periodico)
+	.col-md-6
+		h6=descrip
+		a
+			p=zona

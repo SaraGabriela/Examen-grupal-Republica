@@ -51,9 +51,58 @@ block content
                     +noticias('nombfgrgre','../image/img_especiales.jpg','pdfdsatty','holsssa')
             .row
                 a(href="#") 
-                    h6 ULTIMAS NOTICIAS
+                    h5 ULTIMAS NOTICIAS
                     img(src="../image/double-arrow-bottom.png") 
                 +ultimas
                 
         .col-md-4
-            img(src="../image/banner-aside-home.jpg")
+            .row
+                img(src="../image/banner-aside-home.jpg")
+            .row
+                img(src="../image/img_sucribe.png")
+                .div
+                    p <strong>Suscribete </strong> a nuestro boletin
+                    input.form-control(type='text')
+                    button.btn.btn-sm SUSCRIBIRSE
+            .row
+                .div
+                    img(src="../image/logo_aweita.jpg")
+                    +clases
+                    +aweita
+            .row
+                div 
+                    h4 FOTOS DESTACADAS
+                img(src="../image/img_sucribe.png")
+                p fsdf dsfksdf sdfksdf dsfkss db fvs
+                +clases
+            .row
+                div 
+                    h4 ESPECIALES
+                +fotos('../image/img_especiales_aside.jpg','Regimen laboral juvenil')
+                +fotos('../image/img_especiales_aside.jpg','Regimen laboral juvenil')
+                +fotos('../image/img_especiales_aside.jpg','Regimen laboral juvenil')
+                +fotos('../image/img_especiales_aside.jpg','Regimen laboral juvenil')
+            .row
+                div 
+                    h4 CARLINCATURA DEL DÍA
+                h4<strong> Carlincaturas 30-01-2015</strong>
+                img(src="../image/img_carlincatura_sd.jpg")
+                p Todas las Carlincaturas
+            .row
+                div 
+                    h4 NUESTROS BLOGUEROS
+                div
+                    +bloguer
+                    h6 Todos los Blogs
+            .row
+                div 
+                    h4 EDICIÒN IMPRESA
+                div
+                    h6 República-Lima
+                    img(src="../image/img_impreso_sd_prominent.jpg")
+                    .row
+                        +periodicos('../image/img_impreso_sd.jpg','Extorcion enmenores en colegio','Republica-Norte')
+                    .row
+                        +periodicos('../image/img_impreso_sd.jpg','Extorcion enmenores en colegio','Republica-Sur')
+                    .row
+                        +periodicos('../image/img_impreso_sd.jpg','El ojo de Oblitas','Domingo')
