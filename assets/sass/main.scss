@@ -1,3 +1,22 @@
 *{outline:1px solid rgba(255,0,0,0.3);}
 @import "code/common";
-@import "code/base";
+
+// ---footer----
+.footer{background-color:$color_gris;
+margin-top:600px;}
+.footer img{margin:auto;padding:20px;}
+.footer li{list-style:none;}
+.pie-pagina{background-color:$color_gris;}
+.pie-pagina li{font-size:10px;}
+hr{margin:0px;}
+// ----contact---
+.contact .escribir{
+	width: 100%;
+	background-color:$color_gris;
+	padding:5px;
+	border-radius:3px;
+	margin:10px 0;}
+.contact li.ej{margin-bottom: 4px;list-style:none;}
+.contact textarea{height: 150px;}
+.contact img{margin:auto;}
+// ---columna---
