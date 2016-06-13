@@ -1,4 +1,7 @@
-/**{outline:1px solid rgba(255,0,0,0.3);}*/
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.3);
+}
+
 body {
   font-family: 'Open Sans',sans-serif;
   color: #1F1F1F; }
@@ -136,6 +139,10 @@ h1, h2, h3, h4, h5, h6 {
 .mg-botton2 {
   margin-bottom: 40px; }
 
+.mg-botton2 {
+  margin-bottom: 40px;
+}
+
 .mt-negativo {
   margin-top: -70px; }
 
@@ -195,10 +202,19 @@ h1, h2, h3, h4, h5, h6 {
   border-left: 2px solid #fff; }
 
 .b-right {
+<<<<<<< HEAD
+  border-right: 1px solid #000;
+}
+
+.color-n {
+  color: #000;
+}
+=======
   border-right: 1px solid #000; }
 
 .color-n {
   color: #000; }
+>>>>>>> 372346a48a7b582efb44cf38856ecaf6a0a80f3c
 
 /*CSS DE PARTE GRIS DE HEADER*/
 .fondo-gris {
@@ -468,7 +484,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer {
   background-color: #F5F5F5;
+<<<<<<< HEAD
+  margin-top: 20px;
+}
+=======
   margin-top: 20px; }
+>>>>>>> 372346a48a7b582efb44cf38856ecaf6a0a80f3c
 
 .footer img {
   margin: auto;
@@ -583,6 +604,21 @@ img {
   top: 85px; }
 
 .pie-pagina {
+<<<<<<< HEAD
+  background-color: #F5F5F5;
+}
+
+.pie-pagina li {
+  font-size: 12px;
+  display: inline-block;
+  list-style: none;
+  padding: 0 5px;
+}
+
+.pie-pagina hr {
+  margin: 0px;
+}
+=======
   background-color: #F5F5F5; }
   .pie-pagina li {
     font-size: 12px;
@@ -591,6 +627,7 @@ img {
     padding: 0 5px; }
   .pie-pagina hr {
     margin: 0px; }
+>>>>>>> 372346a48a7b582efb44cf38856ecaf6a0a80f3c
 
 .contact .escribir {
   width: 100%;
