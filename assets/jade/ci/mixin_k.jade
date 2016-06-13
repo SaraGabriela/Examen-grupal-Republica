@@ -1,30 +1,30 @@
 mixin columna(img,h4,p1,p2,p3,p4)
 	img.img-responsive(src=img)
-	h4 
+	h4.text-center 
 		strong=h4
 	p=p1
 	p=p2
 	p=p3
 	p=p4
 mixin edicion(img,h5,a)
-	img.img.responsive(src=img)
+	img.img-responsive(src=img)
 	h5
 		strong=h5
 	a(href="#")=a
 mixin list
-	ul.pd-left
+	ul.pd-left.font-text
 		li 
-			a.color-n(href="#") One Direction
+			a.color-n(href="#") Al fondo hay sitio
 		li 
-			a.color-n(href="#") ONPE
+			a.color-n(href="#") Alejandro Toledo
 		li 
 			a.color-n(href="#") Pablo Escobar
 		li 
-			a.color-n(href="#") Paolo Guerrero
+			a.color-n(href="#") Alianza Lima
 		li 
 			a.color-n(href="#") Pension 65
 		li 
-			a.color-n(href="#") PNP
+			a.color-n(href="#") Banco de la Nación
 		li 
 			a.color-n(href="#") Precio del dòlar
 		li 
@@ -40,19 +40,63 @@ mixin list
 		li 
 			a.color-n(href="#") BBVA
 		li 
-			a.color-n(href="#") Xbox
+			a.color-n(href="#") Reniec
 		li 
 			a.color-n(href="#") BCP
 		li 
-			a.color-n(href="#") Proyecto Conga
+			a.color-n(href="#") Batman
 		li 
 			a.color-n(href="#") PUCP
 		li 
 			a.color-n(href="#") Real Madrid
 		li 
-			a.color-n(href="#") Redes Sociales
+			a.color-n(href="#") BBVA
 		li 
-			a.color-n(href="#") Reniec
+			a.color-n(href="#") Xbox
 		li 
-			a.color-n(href="#") Robert Pattinson
+			a.color-n(href="#") BCP
+mixin infografia(img)
+	img.img-responsive.mg(src=img)
+mixin pregunta(img,subti,p,input,input2,boton,a)
+	img.img-responsive(src=img)
+	h4.text-center 
+		strong= subti
+	p=p
+	p.text-center
+		input(type='radio')
+		|  Si
+	p.text-center
+		input(type='radio')
+		|  No
+	p.text-center
+		button.bg-c-rojo=boton
+	p.text-center
+		strong
+			a.c_rojo(href="#")=a
+mixin pregunta2(subti,p,img,a)
+	h5.text-center
+		strong=subti
+	p=p
+	img.barra.img-responsive(src=img)
+	p.text-center
+		strong
+			a.c_rojo(href="#")=a
+mixin foto-img(foto,titulo,p2)
+	div
+		.col-md-6
+			img(src=foto)
+		.col-md-6
+			p
+				strong=titulo
+	p.c_rojo.text-center=p2
+mixin reportero(img,titu,foto,subti,p)
+	img.img-responsive(src=img)
+	h4.text-center
+		strong=titu
+	img.auto.img-responsive(src=foto)
+	h5
+		strong=subti
+	p=p
+
+
 

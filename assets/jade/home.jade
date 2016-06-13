@@ -1,4 +1,5 @@
 include ci/mixin_p.jade
+include ci/mixin_k.jade
 extends ci/base.jade
 block title
  title home
@@ -106,3 +107,49 @@ block content
                         +periodicos('../image/img_impreso_sd.jpg','Extorcion enmenores en colegio','Republica-Sur')
                     .row
                         +periodicos('../image/img_impreso_sd.jpg','El ojo de Oblitas','Domingo')
+
+            //just some parashop
+            .row.linea
+                div
+                    hr.hr2.mg
+            .row.infografia.bd-t.bd-b
+                div
+                    h4.text-center.pd5.c_tur.font-tit-col INFOGRAFÍAS
+                +infografia("../image/infografia_1.png")
+                +infografia("../image/infografia_2.png")
+            .row.estadistica.pd-all-fondo
+                div.pd-all.bg-white.mg-botton
+                    +pregunta("../image/img_pregunta.png", "La pregunta de hoy", "¿Cree usted que la premier Ana Jara debe renunciar?", "Si", "No", "VOTAR", "Ver resultados" )
+                div.pd-all.bg-white
+                    +pregunta2("La pregunta de ayer", "¿Cree usted que se militarizó la conmemoración del fallo de la Haya en Lima?", "../image/porcentaje.jpg", "Ver preguntas pasadas")
+            .row.libero.borde.mg-top2
+                img.img-responsive.mg-auto.pd(src="../image/logo_libero.jpg")
+                +foto-img("../image/deporte_1.png", "Fiorentina 1-1 en su visita a Génova con Juan Vargas-VIDEO")
+                +foto-img("../image/deporte_2.png", "Farfan: Salke no sabe cuando volvera a las canchas-FOTOS")
+                +foto-img("../image/deporte_1.png", "Barcelona vs Villarreal: gano con soles 2-3 de Neymar-VIDEO")
+                +foto-img("../image/deporte_2.png", "Perú cayó 3-1 ante Colombia por el hexagono final Sub 20-VIDEO", "Libero.pe")
+                hr.hr3
+            .row.popular.borde.mg-top2
+                img.img-responsive.mg-auto.pd(src="../image/logo_popular.jpg")
+                +foto-img("../image/popular_1.png","Joshua Ivanof está loco por olor e imagen de Melissa Loza")
+                +foto-img("../image/popular_2.png","Corintians:Paolo Guerrero le dedica su gol a su Alondra García")
+                +foto-img("../image/popular_1.png","Angie Arizaga es amenazada de muerte y pone una firme denuncia")
+                +foto-img("../image/popular_2.png","Philips Hoffman Seymour: un año sin el premiado actor", "elPopular.pe")
+                hr.hr4
+            .row.wapa.borde.mg-top2
+                img.img-responsive.mg-auto.pd(src="../image/logo_wapa.jpg")
+                +foto-img("../image/wapa_3.png", "¿Cómo renovar el guardaropa de los más pequeños?")
+                +foto-img("../image/wapa_1.png", "Shakira y Piquè ya son padres por segunda vez")
+                +foto-img("../image/wapa_3.png", "Ted 2: mira el trailer de la cinta que ya esta por salir")
+                +foto-img("../image/wapa_2.png", "¿Como usar los zapatos altos sin dolor? Aprende unos tips", "Wapa.pe")
+                hr.hr3
+            .row.reportero.pd-all-fondo.mg-top2
+                div.pd-all.bg-white.mg-botton
+                    +reportero("../image/img_reporteroc.png", "Reportero ciudadano", "../image/img_sd_reporteroc.jpg", "Estacionamiento indebido", "¿Está permitido que dejen su auto en reiteradas ocasiones toda la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta.")
+                p.text-center
+                    button.btn.btn-sm.bg-c-rojo.text-center ENVIAR FOTOS
+                p.text-center
+                    strong
+                        a.c_rojo(href="#") Más fotos
+
+
