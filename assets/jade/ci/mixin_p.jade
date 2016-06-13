@@ -2,12 +2,12 @@ mixin noticias(titulo,imgn,text,resena)
 	.border_p
 		h5.rojo=titulo
 		.cont_img
-			img(src=imgn)
+			img.img-responsive(src=imgn)
 			h4.blanco=text
 		p=resena
 mixin foto_columnista(img,text,texts)
 	.contenedor_columnistas.inline-block.list
-		img.img_bor(src=img)
+		img.img-responsive.img_bor(src=img)
 		p=text
 		h6=texts
 mixin foto_colum
@@ -19,30 +19,30 @@ mixin ultimas_n(fecha,titulo,img,lead,face,twitter,google,punto1,comentario,nume
 		p=fecha
 		h3=titulo
 		.col-md-4.padding
-			img(src=img)
+			img.img-responsive(src=img)
 		.col-md-8
 			p=lead
 			ul.list-inline.list-unstyled.absolute
 				li
-					img(src=face)
+					img.img-responsive(src=face)
 				li
-					img(src=twitter)
+					img.img-responsive(src=twitter)
 				li
-					img(src=google)
+					img.img-responsive(src=google)
 				li
-					img(src=punto1)
+					img.img-responsive(src=punto1)
 				li
-					img(src=comentario)
+					img.img-responsive(src=comentario)
 				li
 					p.plomo=numero
 				li
-					img(src=punto2)
+					img.img-responsive(src=punto2)
 				li
 					p.plomo=clase
 				li
-					img(src=punto3)
+					img.img-responsive(src=punto3)
 				li
-					img(src=simbolo)
+					img.img-responsive(src=simbolo)
 	hr.linea
 mixin ultimas
 	+ultimas_n('Hace 1 hora 12 minutos','Emma Watson protagonizará "La bella y la bestia" | VIDEO','../image/Emma.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de "La Bella y la Bestia" en la versión de carne y hueso.','../image/face.png','../image/twitter.png','../image/google.png','../image/bullet.gif','../image/ico_comment.png','10','../image/bullet.gif','espectaculos','../image/bullet.gif','../image/video.png')
@@ -51,7 +51,7 @@ mixin ultimas
 	+ultimas_n('Hace 1 hora 12 minutos','Real Madrid:Cristiano Ronaldo fue sancionado con dos partidos y si estara contra el Atletico de Madrid','../image/Real Madrid.jpg','Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba,el Comité de Competición ha llegado a la...','../image/face.png','../image/twitter.png','../image/google.png','../image/bullet.gif','../image/ico_comment.png','10','../image/bullet.gif','Arequipa')
 mixin aweita(foto,descripcion)
 	.col-md-5
-		img(src=foto)
+		img.img-responsive(src=foto)
 	.col-md-7
 		p=descripcion
 mixin clases
@@ -59,12 +59,12 @@ mixin clases
 	+aweita('../image/otra_aweita.jpg','San Lorenzo perdio 2-1,Racin fue mejor tacticamente.')
 	
 mixin fotos(foto,titulo)
-	img(src=foto)
+	img.img-responsive(src=foto)
 	div
 		p=titulo
 mixin blogueros(titu,tex)
 	.col-md-3
-		img(src='../image/img_blogueros.jpg')
+		img.img-responsive(src='../image/img_blogueros.jpg')
 	.col-md-9
 		p=titu
 		h6=tex		
@@ -75,7 +75,7 @@ mixin bloguer
 	+blogueros('Augusto Alvarez Rodrich','El unico  pulpin es Humala')
 mixin periodicos(periodico,descrip,zona)
 	.col-md-6.margint
-		img(src=periodico)
+		img.img-responsive(src=periodico)
 	.col-md-6
 		h5=descrip
 		a
