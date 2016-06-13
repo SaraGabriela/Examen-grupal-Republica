@@ -93,4 +93,13 @@ hr{margin:0px;}
 	.auto{margin-top:0px;}
 }
 
-
+// ---responsive---contacto
+@media screen and(max-width:750px){
+	.contact{
+		.escribir{padding:5px;}
+		.input-radio{margin-left:40px;}
+	}}
+	.footer{
+		.colum-logo{padding:10px 15px;}
+		p{text-align:center;}
+	}
