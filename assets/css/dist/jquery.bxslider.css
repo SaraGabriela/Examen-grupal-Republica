@@ -104,11 +104,13 @@
 
 .bx-wrapper .bx-prev {
 	left: -35px;
+	transform: translate(0px,2.5px);
 	background: url(images/arrow_prev.png) no-repeat;
 }
 
 .bx-wrapper .bx-next {
 	right: -35px;
+	transform: translate(0px,2.5px);
 	background: url(images/arrow_next.png) no-repeat;
 }
 

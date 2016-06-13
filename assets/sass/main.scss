@@ -1,7 +1,8 @@
-*{outline:1px solid rgba(255,0,0,0.3);}
+/**{outline:1px solid rgba(255,0,0,0.3);}*/
 @import "code/common";
 @import "code/base";
 @import "code/blog";
+@import "code/columnista";
 .footer{background-color:$color_gris;
 margin-top:20px;}
 .footer img{margin:auto;padding:20px;}

@@ -12,6 +12,7 @@ i.fa{margin-left:3px;}}
 }
 .head_links li a{text-decoration:none; color:$azul; font-weight:700; margin-right:8px; font-family:'Open Sans';}
 .boton-rojo{background-color:#DD4A4A;color:#fff; font-family:'Open Sans'; font-weight:600;}
+.redes-base{margin-left:7%;}
 
 /*ROW DEL LOGO*/
 .base-domingo{border:1px solid $gris-claro; position:relative; padding-top:10px; padding-bottom:10px; border-bottom:1px solid $guinda;
@@ -37,9 +38,9 @@ img.pull-right{position:absolute; top:0px;}}
 .temas{
 	ul{border-radius:8px; padding:0px; background-color:$gris-claro; min-height:30px;
 	li:first-child{background-color:#000; color:#fff; padding:8px; border-radius:8px 0px 0px 8px;}}}
-.noticia-item{width:100px !important;
+.noticia-item{width:110px !important;
 img,p{display:inline-block;}
-img{margin-right:30px;}
+img{margin-right:25px;}
 }
 .noticias-gris{margin-top:5px;}
 .div-n-gris{margin-left:5%; border:none !important; box-shadow:none !important;}
