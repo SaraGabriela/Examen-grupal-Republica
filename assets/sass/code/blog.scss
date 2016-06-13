@@ -1,0 +1,10 @@
+.titulo-blog{h1{font-size:45px;}
+h4{color:$azul;}
+img{margin-left:15px;}}
+.cuadros-blogs{margin-top:30px;}
+.border-blogs{border:1px solid $gris-claro; min-height:195px; position:relative;
+p{margin-top:15px; font-size:10px;}
+h4{font-weight:700;}}
+.cuadro-mix{position:absolute; right:5px;}
+.texto-mix{min-height:80px; background-color:$gris-claro; position:absolute;bottom:5px; right:5px; width:95%;}
+.imagen-mix{position:absolute; z-index:100;}

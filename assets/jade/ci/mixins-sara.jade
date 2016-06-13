@@ -1,13 +1,14 @@
 mixin bloque(titular,imagen,nombre,frase)
  .col-md-4.text-center
-  p Lunes 14 de julio de 2015
-  h3= titular
-  .cuadrado-mix
-   .imagen-mix.pull-left
-    img(src=imagen)
-   .texto-mix
-    p= nombre
-    h5= frase 
+  .border-blogs 
+   p Lunes 14 de julio de 2015
+   h4= titular
+   .cuadrado-mix
+    .imagen-mix.pull-left
+     img(src=imagen)
+    .texto-mix
+     p= nombre
+     h5= frase 
 
 mixin blogs
  .row

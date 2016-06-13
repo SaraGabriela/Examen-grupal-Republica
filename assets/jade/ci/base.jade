@@ -6,14 +6,18 @@ html(lang='es-PE')
      title Home        
     link(href='http://fonts.googleapis.com/css?family=PT+Sans:400,700', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Oswald:400,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700', rel='stylesheet', type='text/css')          
     link(rel='stylesheet', type='text/css', href='../css/dist/font-awesome.min.css')
     link(rel='stylesheet', type='text/css', href='../css/dist/bootstrap.min.css')
     link(rel='stylesheet', type='text/css', href='../css/dist/slick.css')
     link(rel='stylesheet', type='text/css', href='../css/dist/slick-theme.css')
+    link(rel='stylesheet', type='text/css', href='../css/dist/jquery.bxslider.css')      
     link(rel='stylesheet', type='text/css', href='../css/main.css')
     script(src='http://code.jquery.com/jquery-1.11.2.min.js')
     script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
     script(type='text/javascript', src='../js/bootstrap.min.js')
+    script(type='text/javascript', src='../js/main.js')
+    script(type='text/javascript', src='../js/jquery.bxslider.min.js')                  
     script(type='text/javascript', src='../js/slick.min.js')
     script(type='text/javascript', src='../js/bootstrap-hover-dropdown.min.js')
     script(type='text/javascript', src='../js/modernizr.custom.68172.js')
@@ -22,22 +26,22 @@ html(lang='es-PE')
    header
     .fondo-gris
      .container-fluid
-      .row
+      .row.pd2
        .col-md-8.col-md-offset-2
         img.img-responsive(src="../image/banner_top.jpg")
-      .row
+      .row.pd2.pdb-0
        .col-md-4.col-md-offset-2
-        ul.list-inline
+        ul.list-inline.head_links.pd-0
          li
           a.fs-10(href="http://www.libero.pe/") LIBERO.PE 
          li
           a.fs-10(href="http://www.elpopular.pe/") ELPOPULAR.PE  
          li
           a.fs-10(href="http://fundacionmohme.org/") FUNDACIÓN GUSTAVO MOHME LLONA
-       .col-md-3.col-md-offset-1
-        ul.list-inline
+       .col-md-3.col-md-offset-1.pd-0
+        ul.list-inline.pd-0
          li
-          button.boton.boton-rojo.fs-10 SUSCRIBETE AL BOLETIN
+          button.boton.boton-rojo.fs-10 SUSCRÍBETE AL BOLETIN
          li
           a(href="https://www.facebook.com/larepublica.pe?fref=ts")            
            i.fa.fa-facebook(aria-hidden="true")
@@ -54,17 +58,18 @@ html(lang='es-PE')
           a(href="#")            
            i.fa.fa-rss(aria-hidden="true")
          li
-          button.fs-10 BUSCAR
+          button.fs-10.boton-search BUSCAR
            i.fa.fa-search
    .container-fluid
     .row
-     .col-md-2.pdt-50
+     .col-md-2.pdt-130
       img(src="../image/publi-1.jpg")        
      .col-md-8
-      .row.logo  
-       .col-md-5
-        img.pull-left(src="../image/logo-la-republica.jpg") 
-       .col-md-3
+      .row.logo.pd  
+       .col-md-5.pd
+        a(href="home.html")
+         img.pull-left(src="../image/logo-la-republica.jpg") 
+       .col-md-3.pd-0
         .base-domingo.text-center
          block domingo
           h6 Domingo            
@@ -78,7 +83,7 @@ html(lang='es-PE')
           p.fs-10 por: Gustavo Mohme Llona
          img.pull-right.inline-block(src="../image/img_author.jpg")           
       .row.navega-rojo
-       ul.list-inline
+       ul.list-inline.ml-0
         li
          a.fs-11(href="#") POLÍTICA
         li
@@ -97,22 +102,51 @@ html(lang='es-PE')
          a.fs-11(href="#") ED.IMPRESA
         li
          a.fs-11(href="#") REGIONALES
-        li
-         a.fs-11(href="#") MÁS SECCIONES                                                                                        
+        li.dropdown
+         button.fs-11(id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") MÁS SECCIONES
+          span.caret
+         ul.dropdown-menu(aria-labelledby="dLabel")
+          li
+          a(href="blog.html") BLOGS
+          li
+          a(href="columnistas.html") COLUMNISTAS
+          li
+          a(href="contact.html") CONTACTO  
       .row.temas
-       ul.list-inline
-        li.fs-11.pt-sans TEMAS DEL DíA
-        li.fs-11 Globos de oro
-        li.fs-11 Youtube
-        li.fs-11 PNP
-        li.fs-11 Charlie Hebdo
-        li.fs-11 FC Barcelona
-        li.fs-11 Alianza Lima
-        li.fs-11 Balón de Oro
-        li.fs-11 Alianza Lima
-        li.fs-11 Balón                                                                        
+       ul.list-inline.ml-0
+        li.fs-11.pt-sans.col-md-2.text-center TEMAS DEL DíA
+        li.col-md-10
+         .col-md-11.div-n-gris        
+          .noticias-gris         
+           .noticia-item
+            p.fs-11 Globos de oro
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 Youtube
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 PNP
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 Charlie Hebdo
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 FC Barcelona
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 Alianza Lima
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 Balón de Oro
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 Alianza Lima
+           .noticia-item
+            img(src="../image/bullet.gif")
+            p.fs-11 Balón                                                                        
       .row
        img.img-responsive(src="../image/banner-header.jpg")
       block content          
-     .col-md-2.pdt-50  
-      img(src="../image/publi-2.jpg")                                                                              
+     .col-md-2.pdt-130  
+      img(src="../image/publi-2.jpg")
+    block footer    
