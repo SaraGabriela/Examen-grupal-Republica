@@ -1,78 +1,82 @@
 mixin noticias(titulo,imgn,text,resena)
-	h6=titulo
-	.contenedor_noticias
-		img(src=imgn)
-		h6=text
-	p=resena
+	.border_p
+		h5.rojo=titulo
+		.cont_img
+			img(src=imgn)
+			h4.blanco=text
+		p=resena
 mixin foto_columnista(img,text,texts)
-	.contenedor_columnistas
-		img(src=img)
+	.contenedor_columnistas.inline-block.list
+		img.img_bor(src=img)
 		p=text
 		h6=texts
 mixin foto_colum
 	+foto_columnista('../image/img-columnistas.jpg','Mario Vargas LLosa','Megarrenuncia apulpinante')
 	+foto_columnista('../image/img_blogueros.jpg','Agusto Alvarez Rodrich','Megarrenuncia apulpinante')
 
-mixin ultimas_n(fecha,titulo,img,lead,redesp,punto1,comentario,punto2,clase,punto3,simbolo)
-	.row
+mixin ultimas_n(fecha,titulo,img,lead,face,twitter,google,punto1,comentario,numero,punto2,clase,punto3,simbolo)
+	.row.ml-0.relative
 		p=fecha
-		h6=titulo
-		.col-md-4
+		h3=titulo
+		.col-md-4.padding
 			img(src=img)
 		.col-md-8
 			p=lead
-			ul.list-inline.list-unstyled
+			ul.list-inline.list-unstyled.absolute
 				li
-					img(src=redesp)
+					img(src=face)
+				li
+					img(src=twitter)
+				li
+					img(src=google)
 				li
 					img(src=punto1)
 				li
 					img(src=comentario)
 				li
+					p.plomo=numero
+				li
 					img(src=punto2)
 				li
-					p=clase
+					p.plomo=clase
 				li
 					img(src=punto3)
 				li
 					img(src=simbolo)
-
+	hr.linea
 mixin ultimas
-	+ultimas_n('21 de mayo','21 de mayo','../image/img-columnistas.jpg','Mario Vargas LLosa','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','espectaculos','../image/bullet.gif','../image/bullet.gif')
-	+ultimas_n('21 de mayo','21 de mayo','../image/img-columnistas.jpg','Mario Vargas LLosa','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','espectaculos','')
-	+ultimas_n('21 de mayo','21 de mayo','../image/img-columnistas.jpg','Mario Vargas LLosa','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','../image/bullet.gif','espectaculos','../image/bullet.gif','')
+	+ultimas_n('Hace 1 hora 12 minutos','Emma Watson protagonizará "La bella y la bestia" | VIDEO','../image/Emma.jpg','La actriz Emma Watson fue confirmada por Disney como la protagonista de "La Bella y la Bestia" en la versión de carne y hueso.','../image/face.png','../image/twitter.png','../image/google.png','../image/bullet.gif','../image/ico_comment.png','10','../image/bullet.gif','espectaculos','../image/bullet.gif','../image/video.png')
+	+ultimas_n('Hace 1 hora 12 minutos','Roque Benavides respalda proyecto Tía María y espera que Conga se socialice','../image/fotogaleria_main.jpg','Zenaida Condori Contreras Arequipa Para el presidente de la Compañia de Maria Buenaventura,Roque Benavides, el proyecto Tia Maria,que promueve Southern Perú, ya debe...','../image/face.png','../image/twitter.png','../image/google.png','../image/bullet.gif','../image/ico_comment.png','0','../image/bullet.gif','Arequipa')
+	+ultimas_n('Hace 1 hora 12 minutos','YouTuve:hombre finge ahogarse y su perro lo rescata | FOTOS','../image/perro.jpg','Un perrito de nombre Jack, rescato a su dueño quien habia caido al lago luego de esbalar con una cascara de platano.','../image/face.png','../image/twitter.png','../image/google.png','../image/bullet.gif','../image/ico_comment.png','10','../image/bullet.gif','espectaculos','../image/bullet.gif','../image/foto.png')
+	+ultimas_n('Hace 1 hora 12 minutos','Real Madrid:Cristiano Ronaldo fue sancionado con dos partidos y si estara contra el Atletico de Madrid','../image/Real Madrid.jpg','Después de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba,el Comité de Competición ha llegado a la...','../image/face.png','../image/twitter.png','../image/google.png','../image/bullet.gif','../image/ico_comment.png','10','../image/bullet.gif','Arequipa')
 mixin aweita(foto,descripcion)
-	.row
-		.col-md-5
-			img(src=foto)
-		.col-md-7
-			p=descripcion
-mixin clases
-	+aweita('../image/img-columnistas.jpg','dsd dfs  fgf fb fb dsd dfs  fgf fb fb sdfs dsd dfs  fgf fb fb sdfssdfs')
-	+aweita('../image/img-columnistas.jpg','dsd dfs  fgf fb fb dsd dfs  fgf fb fb sdfs dsd dfs  fgf fb fb sdfssdfs')
-	+aweita('../image/img-columnistas.jpg','dsd dfs  fgf fb fb dsd dfs  fgf fb fb sdfs dsd dfs  fgf fb fb sdfssdfs')
-mixin fotos(foto,titulo)
-	.row
+	.col-md-5
 		img(src=foto)
-		div
-			p=titulo
+	.col-md-7
+		p=descripcion
+mixin clases
+	+aweita('../image/img_aweita.jpg','Juan Román Riquelme, el adiós al Ultimo 10 de Argentina.')
+	+aweita('../image/otra_aweita.jpg','San Lorenzo perdio 2-1,Racin fue mejor tacticamente.')
+	
+mixin fotos(foto,titulo)
+	img(src=foto)
+	div
+		p=titulo
 mixin blogueros(titu,tex)
-	.row
-		.col-md-3
-			img(src='../image/img_blogueros.jpg')
-		.col-md-9
-			a
-				p=titu
-			h6=tex		
+	.col-md-3
+		img(src='../image/img_blogueros.jpg')
+	.col-md-9
+		p=titu
+		h6=tex		
 mixin bloguer
-	+blogueros('Augusto Alvarez','Charly Hebdo historia que no debe repetirse')
-	+blogueros('Augusto Alvarez','El unico  pulpin es Humala')
-	+blogueros('Augusto Alvarez','Charly Hebdo historia que no debe repetirse')
-	+blogueros('Augusto Alvarez','El unico  pulpin es Humala')
+	+blogueros('Augusto Alvarez Rodrich','Charly Hebdo historia que no debe repetirse')
+	+blogueros('Augusto Alvarez Rodrich','El unico  pulpin es Humala')
+	+blogueros('Augusto Alvarez Rodrich','Charly Hebdo historia que no debe repetirse')
+	+blogueros('Augusto Alvarez Rodrich','El unico  pulpin es Humala')
 mixin periodicos(periodico,descrip,zona)
-	.col-md-6
+	.col-md-6.margint
 		img(src=periodico)
 	.col-md-6
-		h6=descrip
+		h5=descrip
 		a
-			p=zona
+			p.rojoiz=zona

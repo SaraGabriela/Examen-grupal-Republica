@@ -6,7 +6,7 @@ block domingo
  h6 HABLA LA LIDERESA DEL NACIONALISMO
 block content
     .row
-        h1.text-center GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA
+        h1.text-center GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANAA
         ul.list-inline.list-unstyled.text-center
             li
                 a(href="#")
@@ -20,22 +20,22 @@ block content
             li
                 img(src="../image/bullet.gif")
             li
-                p Hace 12 minutos
+                p.plomo Hace 12 minutos
             li
                 img(src="../image/bullet.gif")
             li
-                p POLÍTICA
+                p.plomo POLÍTICA
 
         .col-md-6
             +noticias('','../image/img_grid_principal.jpg','JNE impulsará campaña en favor de la aprobación de la Reforma Electoral')
         .col-md-6
             .row
-                +noticias('','../image/img_especiales.jpg','Martín Belaunde Lossio:Empresas vinculadas al empresario contrataron por S/.3 000 millones/FOTOS')
+                +noticias('','../image/imagen-martin-belaunde.jpg','Martín Belaunde Lossio:Empresas vinculadas al empresario contrataron por S/.3 000 millones | FOTOS')
             .row
-                +noticias('','../image/img_especiales.jpg','Sub 20:Perú vs. Paraguay:bicolor empató 1-1 y pasó al hexagonal final del Sudamericano/VIDEO')
-    .row.text-center
+                +noticias('','../image/peru vs paraguay.jpg','Sub 20:Perú vs. Paraguay:bicolor empató 1-1 y pasó al hexagonal final del Sudamericano | VIDEO')
+    .row.text-center.fondo_columnistas#mi-linearo
         .etiqueta
-            p COLUMNISTAS
+            h4 COLUMNISTAS
         ul.list-inline.list-unstyled
             li
                 +foto_colum
@@ -45,70 +45,77 @@ block content
                 +foto_colum
     .row
         .col-md-8
-            .row
+            .row.margint
                 .col-md-6
                     +noticias('Mercado de Pases 2015','../image/img_especiales.jpg','Mercado de pases 2015:altas,bajas y rumores de los equipos peruanos','Todo sobre Mecado de Pases 2015')
                 .col-md-6
-                    +noticias('Regimen Laboral juvenil','../image/img_especiales_aside.jpg','Ollanta Humala:Los que han perdido,más allá de tambores y panderetas,son 2 millones de jóvenes/VIDEO','Todod sobre Regimen laboral juvenil')
+                    +noticias('Regimen Laboral juvenil','../image/img_especiales_aside.jpg','Ollanta Humala:Los que han perdido,más allá de tambores y panderetas,son 2 millones de jóvenes | VIDEO','Todod sobre Regimen laboral juvenil')
             .row
                 .col-md-6
-                    +noticias('Champions League','../image/img_especiales.jpg','¿Podrá el Real Madrid  conseguir la"Undécima"?','Todo sobre Champions League')
+                    +noticias('Champions League','../image/Real Madrid.jpg','¿Podrá el Real Madrid  conseguir la"Undécima"?','Todo sobre Champions League')
                 .col-md-6
-                    +noticias('Super Bowl','../image/img_especiales.jpg','Super Bowl XLIX:New England Patriots se consagró campeón la NFL al ganar 28-24 a Seahwks/VIDEO','Todo sobre Super Bowl')
-            .row
+                    +noticias('Super Bowl','../image/copa.jpg','Super Bowl XLIX:New England Patriots se consagró campeón la NFL al ganar 28-24 a Seahwks | VIDEO','Todo sobre Super Bowl')
+            .row.ml-0.margin15
                 a(href="#") 
-                    h5 ULTIMAS NOTICIAS
+                    h4 ULTIMAS NOTICIAS
                     img(src="../image/double-arrow-bottom.png") 
                 +ultimas
-                
-        .col-md-4
+                +ultimas
+                +ultimas
+                +ultimas
+                +ultimas
+        .col-md-4.quitar
             .row
                 img(src="../image/banner-aside-home.jpg")
-            .row
+            .row.text-center
                 img(src="../image/img_sucribe.png")
                 .div
                     p <strong>Suscribete </strong> a nuestro boletin
-                    input.form-control(type='text')
+                    input.form-control.tamano(type='text')
                     button.btn.btn-sm SUSCRIBIRSE
             .row
-                .div
-                    img(src="../image/logo_aweita.jpg")
+                .borderaweita
+                    img.text-center(src="../image/logo_aweita.jpg")
                     +clases
-                    +aweita
-            .row
-                div 
+                    +clases
+                    p.text-center Más en<spam> Aweita.pe </spam>
+            .row#mi-lineaplo
+                .etiqueta 
                     h4 FOTOS DESTACADAS
-                img(src="../image/img_sucribe.png")
-                p fsdf dsfksdf sdfksdf dsfkss db fvs
-                +clases
-            .row
-                div 
+                img(src="../image/img_fotodes_prominent.jpg")
+                p Lineas de Nasca: admiten prisión preventiva de 6 meses para activista de Greenpeace/FOTOS
+                +aweita('../image/noticias-relacionadas-image-slider-thumb.jpg','Uchuraccay:El pueblo que recibe con flores a quienes llegan a pie | FOTOS')
+                +aweita('../image/noticias-relacionadas-image-slider-thumb.jpg','Alianza Lima vs Fénix: intimos ganaron 1-0 en"Noche Blanquiazul" | VIDEO Y FOTOS')
+                +aweita('../image/rafael nadal.jpg','Tomas Berdych derrotó 3-0 a Rafael Nadal y avanzó en el Australian Open | FOTOS')
+            .row#mi-lineaplo
+                .etiqueta 
                     h4 ESPECIALES
                 +fotos('../image/img_especiales_aside.jpg','Regimen laboral juvenil')
-                +fotos('../image/img_especiales_aside.jpg','Regimen laboral juvenil')
-                +fotos('../image/img_especiales_aside.jpg','Regimen laboral juvenil')
-                +fotos('../image/img_especiales_aside.jpg','Regimen laboral juvenil')
-            .row
-                div 
+                +fotos('../image/fotogaleria_main.jpg','COP 20')
+                +fotos('../image/fotogaleria_col03_01.jpg','Concentración de Medios')
+                +fotos('../image/extincion.jpg','Especies peruanas en peligro de extinción')
+            .row#mi-linearo
+                .etiqueta 
                     h4 CARLINCATURA DEL DÍA
                 h4<strong> Carlincaturas 30-01-2015</strong>
                 img(src="../image/img_carlincatura_sd.jpg")
                 p Todas las Carlincaturas
-            .row
-                div 
+            .row#mi-lineaplo
+                .etiqueta 
                     h4 NUESTROS BLOGUEROS
                 div
                     +bloguer
-                    h6 Todos los Blogs
-            .row
-                div 
+                    +bloguer
+                    h6.text-center Todos los Blogs
+            .row#mi-linearo
+                .etiqueta 
                     h4 EDICIÒN IMPRESA
                 div
-                    h6 República-Lima
+                    h5 República-Lima
                     img(src="../image/img_impreso_sd_prominent.jpg")
                     .row
-                        +periodicos('../image/img_impreso_sd.jpg','Extorcion enmenores en colegio','Republica-Norte')
+                        +periodicos('../image/img_impreso_sd.jpg','Extorcion en menores en colegio','Republica-Norte')
                     .row
-                        +periodicos('../image/img_impreso_sd.jpg','Extorcion enmenores en colegio','Republica-Sur')
+                        +periodicos('../image/img_impreso_sd.jpg','Lluvias en Arequipa inundas casas y causan caos en las calles','Republica-Sur')
                     .row
                         +periodicos('../image/img_impreso_sd.jpg','El ojo de Oblitas','Domingo')

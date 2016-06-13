@@ -1,4 +1,4 @@
-*{outline:1px solid rgba(255,0,0,0.3);}
+/**{outline:1px solid rgba(255,0,0,0.3);}*/
 @import "code/common";
 
 // ---footer----
@@ -20,3 +20,51 @@ hr{margin:0px;}
 .contact textarea{height: 150px;}
 .contact img{margin:auto;}
 // ---columna---
+//home//
+.quitar > .row {margin-left:0px; margin-right:0px;}
+img{max-width: 100%;}
+.contenedor_columnistas{padding: 10px;}
+.padding{padding-left:0px; padding-right:0px;}
+.plomo{color:#768696;}
+.blanco{color:#fff;position: absolute;bottom:1%;}
+.rojo{color:#CD4C6C;font-weight: bold;text-align: center;text-decoration: none;}
+.rojoiz{color:#CD4C6C;font-weight: bold;text-decoration: none;}
+.tamano{width: 80%;margin-left:11%;}
+.fondo_columnistas{background: #F2F2F2}
+.margint{margin: 2% 0%;}
+.margin15{margin-top: 15%;}
+.border_p{border:1px solid #CDCDCD;}
+.cont_img{position: relative; background:linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(18,18,18,1) 100%);}
+@mixin nombre($color){
+	border-top: 7px solid $color;
+}
+@mixin etiqueta($color){
+	.etiqueta{
+		background: $color;
+		position: absolute;
+		color:#fff;
+		top: -11px;
+		text-align: center;
+
+		}
+	}
+	
+#mi-linearo {
+  @include nombre(#B20000);
+  @include etiqueta(#B20000);
+  position: relative;
+  padding-top: 11%;
+  }
+#mi-lineaplo {
+  @include nombre(#768696);
+  @include etiqueta(#768696);
+  position: relative;
+  padding-top: 11%;
+ }
+.img_bor{border: 1px solid #fff;}
+.list{margin-top: -22%;}
+.linea{margin: 2% 0%;}
+.borderaweita{border:2px solid gray;margin: 4% 0%;padding: 4% 0%;}
+.relative{position: relative;}
+.absolute{position: absolute; top: 85px;}
+//home//
