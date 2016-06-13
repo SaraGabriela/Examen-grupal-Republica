@@ -1,9 +1,10 @@
 /**{outline:1px solid rgba(255,0,0,0.3);}*/
 @import "code/common";
-
-// ---footer----
+@import "code/base";
+@import "code/blog";
+@import "code/columnista";
 .footer{background-color:$color_gris;
-margin-top:600px;}
+margin-top:20px;}
 .footer img{margin:auto;padding:20px;}
 .footer li{list-style:none;}
 .pie-pagina{background-color:$color_gris;}
@@ -68,3 +69,36 @@ img{max-width: 100%;}
 .relative{position: relative;}
 .absolute{position: absolute; top: 85px;}
 //home//
+
+	margin-top:600px;
+	img{margin:auto;padding:20px;}
+	li{list-style:none;}
+}
+.pie-pagina{
+	background-color:$color_gris;
+	li{font-size:12px;display: inline-block;
+		list-style: none;
+		padding:0 5px;}
+	hr{margin:0px;}
+}
+.contact{
+	.escribir{width: 100%;
+		background-color:$color_gris;
+		padding:5px;margin:10px 0;
+		border-radius:3px;}
+	li.ej{margin-bottom: 4px;list-style:none;}
+	textarea{height: 150px;}
+	img{margin:auto;}
+} 
+.infografia{margin-bottom:20px;
+	h4{width:150px;color:white;margin:auto;margin-top:-10px;}
+}
+.estadistica{background-image:url("../image/bg_trama_rayas.png");
+	img{margin:auto;margin-top:-45px;}
+	.barra{margin-top:0px;}
+}
+.reportero{background-image:url("../image/bg_trama_rayas.png");
+	img{margin:auto;margin-top:-45px;}
+	.auto{margin-top:0px;}
+}
+
