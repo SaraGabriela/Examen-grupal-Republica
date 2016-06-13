@@ -651,10 +651,6 @@ hr {
   margin-right: 0px;
 }
 
-img {
-  max-width: 100%;
-}
-
 .contenedor_columnistas {
   padding: 10px;
 }
@@ -766,6 +762,7 @@ img {
 .absolute {
   position: absolute;
   top: 85px;
+  font-size: small;
 }
 
 .pie-pagina {
