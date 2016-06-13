@@ -2,9 +2,9 @@ include ci/mixin_p.jade
 include ci/mixin_k.jade
 extends ci/base.jade
 block title
- title home
+    title home
 block domingo
- h6 HABLA LA LIDERESA DEL NACIONALISMO
+    h6 HABLA LA LIDERESA DEL NACIONALISMO
 block content
     .row
         h1.text-center GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANA
@@ -26,7 +26,6 @@ block content
                 img(src="../image/bullet.gif")
             li
                 p POLÍTICA
-
         .col-md-6
             +noticias('','../image/img_grid_principal.jpg','JNE impulsará campaña en favor de la aprobación de la Reforma Electoral')
         .col-md-6
@@ -61,7 +60,6 @@ block content
                     h5 ULTIMAS NOTICIAS
                     img(src="../image/double-arrow-bottom.png") 
                 +ultimas
-                
         .col-md-4
             .row
                 img(src="../image/banner-aside-home.jpg")
@@ -113,7 +111,6 @@ block content
                         +periodicos('../image/img_impreso_sd.jpg','Extorcion enmenores en colegio','Republica-Sur')
                     .row
                         +periodicos('../image/img_impreso_sd.jpg','El ojo de Oblitas','Domingo')
-
             //just some parashop
             .row.linea
                 div
