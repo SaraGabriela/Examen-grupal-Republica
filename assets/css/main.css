@@ -697,7 +697,8 @@ hr {
 }
 
 .padding22 {
-  padding: 2% 0%; }
+  padding: 2% 0%;
+}
 
 .margin15 {
   margin-top: 15%;
@@ -715,56 +716,36 @@ hr {
 #mi-linearo {
   border-top: 7px solid #B20000;
   position: relative;
-<<<<<<< HEAD
-  padding-top: 11%; }
-  #mi-linearo .etiqueta > h4 {
-    background: #B20000;
-    margin: auto;
-    margin-top: -48px;
-    color: #fff;
-    text-align: center;
-    max-width: 50%;
-    padding: 2%;
-    margin-bottom: 4%; }
-=======
   padding-top: 11%;
 }
 
-#mi-linearo .etiqueta {
+#mi-linearo .etiqueta > h4 {
   background: #B20000;
-  position: absolute;
+  margin: auto;
+  margin-top: -48px;
   color: #fff;
-  top: -11px;
   text-align: center;
+  max-width: 50%;
+  padding: 2%;
+  margin-bottom: 4%;
 }
->>>>>>> 7947a5769a02054deca3e460e6629c8a0acd75fa
 
 #mi-lineaplo {
   border-top: 7px solid #768696;
   position: relative;
-<<<<<<< HEAD
-  padding-top: 11%; }
-  #mi-lineaplo .etiqueta > h4 {
-    background: #768696;
-    margin: auto;
-    margin-top: -48px;
-    color: #fff;
-    text-align: center;
-    max-width: 50%;
-    padding: 2%;
-    margin-bottom: 4%; }
-=======
   padding-top: 11%;
 }
 
-#mi-lineaplo .etiqueta {
+#mi-lineaplo .etiqueta > h4 {
   background: #768696;
-  position: absolute;
+  margin: auto;
+  margin-top: -48px;
   color: #fff;
-  top: -11px;
   text-align: center;
+  max-width: 50%;
+  padding: 2%;
+  margin-bottom: 4%;
 }
->>>>>>> 7947a5769a02054deca3e460e6629c8a0acd75fa
 
 .img_bor {
   border: 1px solid #fff;
@@ -795,10 +776,12 @@ hr {
 }
 
 .formato {
-  background-image: url("../image/bg_trama_rayas.png"); }
+  background-image: url("../image/bg_trama_rayas.png");
+}
 
 .etiqueta {
-  text-align: center; }
+  text-align: center;
+}
 
 .pie-pagina {
   background-color: #F5F5F5;
@@ -871,4 +854,21 @@ hr {
 
 .reportero .auto {
   margin-top: 0px;
+}
+
+@media screen and (max-width: 750px) {
+  .contact .escribir {
+    padding: 5px;
+  }
+  .contact .input-radio {
+    margin-left: 40px;
+  }
+}
+
+.footer .colum-logo {
+  padding: 10px 15px;
+}
+
+.footer p {
+  text-align: center;
 }
