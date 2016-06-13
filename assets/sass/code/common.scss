@@ -21,6 +21,7 @@ h1,h2,h3,h4,h5,h6{font-family:'PT Sans',Helvetica;}
 
 .pt-sans{font-family:'PT Sans';}
 .h-titular{font-weight:700;}
+.boton{border-radius:5px; padding:5px; box-shadow:none; border:none;}
 
 .inline-block{display:inline-block;}
 
@@ -28,10 +29,13 @@ h1,h2,h3,h4,h5,h6{font-family:'PT Sans',Helvetica;}
 .ml-negativo-5{margin-left:-5px; margin-right:-5px;}
 .ml-0{margin-left:0px; margin-right:0px;}
 .mg-top{margin-top:5px;}
+.mg-auto{margin:auto;}
 
 .pd-left{padding-left:15px;}
-.pd-0{padding-left:0px;}
+.pdb-0{padding-bottom:0px !important;}
+.pd-0{padding-left:0px; padding-right:0px;}
 .pd{padding:15px 0;}
+.pdt-130{padding-top:130px;}
 .pd2{padding:10px 0;}
 
 .b-left{border-left:2px solid #fff;}

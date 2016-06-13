@@ -1,5 +1,7 @@
-*{outline:1px solid rgba(255,0,0,0.3);}
+/**{outline:1px solid rgba(255,0,0,0.3);}*/
 @import "code/common";
+@import "code/base";
+@import "code/blog";
 
 // ---footer----
 .footer{background-color:$color_gris;
