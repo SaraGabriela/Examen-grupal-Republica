@@ -4,7 +4,7 @@ mixin noticias(titulo,imgn,text,resena)
 		.cont_img
 			img.img-responsive(src=imgn)
 			h4.blanco=text
-		p=resena
+		p.text-center=resena
 mixin foto_columnista(img,text,texts)
 	.contenedor_columnistas.inline-block.list
 		img.img-responsive.img_bor(src=img)
@@ -57,11 +57,6 @@ mixin aweita(foto,descripcion)
 mixin clases
 	+aweita('../image/deporte_1.png','Juan Román Riquelme, el adiós al Ultimo 10 de Argentina.')
 	+aweita('../image/deporte_1.png','San Lorenzo perdio 2-1, Racin fue mejor tacticamente y ofensivamente.')
-	
-mixin fotos(foto,titulo)
-	img.img-responsive(src=foto)
-	div
-		p=titulo
 mixin blogueros(titu,tex)
 	.col-md-3
 		img.img-responsive(src='../image/img_blogueros.jpg')
