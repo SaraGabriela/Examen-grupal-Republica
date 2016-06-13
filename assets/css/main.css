@@ -526,6 +526,9 @@ hr {
 .margint {
   margin: 2% 0%; }
 
+.padding22 {
+  padding: 2% 0%; }
+
 .margin15 {
   margin-top: 15%; }
 
@@ -540,23 +543,29 @@ hr {
   border-top: 7px solid #B20000;
   position: relative;
   padding-top: 11%; }
-  #mi-linearo .etiqueta {
+  #mi-linearo .etiqueta > h4 {
     background: #B20000;
-    position: absolute;
+    margin: auto;
+    margin-top: -48px;
     color: #fff;
-    top: -11px;
-    text-align: center; }
+    text-align: center;
+    max-width: 50%;
+    padding: 2%;
+    margin-bottom: 4%; }
 
 #mi-lineaplo {
   border-top: 7px solid #768696;
   position: relative;
   padding-top: 11%; }
-  #mi-lineaplo .etiqueta {
+  #mi-lineaplo .etiqueta > h4 {
     background: #768696;
-    position: absolute;
+    margin: auto;
+    margin-top: -48px;
     color: #fff;
-    top: -11px;
-    text-align: center; }
+    text-align: center;
+    max-width: 50%;
+    padding: 2%;
+    margin-bottom: 4%; }
 
 .img_bor {
   border: 1px solid #fff; }
@@ -579,6 +588,12 @@ hr {
   position: absolute;
   top: 85px;
   font-size: small; }
+
+.formato {
+  background-image: url("../image/bg_trama_rayas.png"); }
+
+.etiqueta {
+  text-align: center; }
 
 .pie-pagina {
   background-color: #F5F5F5; }
