@@ -11,19 +11,19 @@ block content
         ul.list-inline.list-unstyled.text-center
             li
                 a(href="#")
-                    img(src="../image/face.png")
+                    img.img-responsive(src="../image/face.png")
             li
                 a(href="#")
-                    img(src="../image/twitter.png")
+                    img.img-responsive(src="../image/twitter.png")
             li
                 a(href="#")
-                    img(src="../image/google.png")
+                    img.img-responsive(src="../image/google.png")
             li
-                img(src="../image/bullet.gif")
+                img.img-responsive(src="../image/bullet.gif")
             li
                 p.plomo Hace 12 minutos
             li
-                img(src="../image/bullet.gif")
+                img.img-responsive(src="../image/bullet.gif")
             li
                 p.plomo POLÍTICA
         .col-md-6
@@ -58,7 +58,7 @@ block content
             .row.ml-0.margin15
                 a(href="#") 
                     h4 ULTIMAS NOTICIAS
-                    img(src="../image/double-arrow-bottom.png") 
+                    img.img-responsive(src="../image/double-arrow-bottom.png") 
                 +ultimas
                 +ultimas
                 +ultimas
@@ -66,23 +66,24 @@ block content
                 +ultimas
         .col-md-4.quitar
             .row
-                img(src="../image/banner-aside-home.jpg")
+                img.img-responsive(src="../image/banner-aside-home.jpg")
             .row.text-center
-                img(src="../image/img_sucribe.png")
+                img.img-responsive(src="../image/img_sucribe.png")
                 .div
                     p <strong>Suscribete </strong> a nuestro boletin
                     input.form-control.tamano(type='text')
                     button.btn.btn-sm SUSCRIBIRSE
             .row
                 .borderaweita
-                    img.text-center(src="../image/logo_aweita.jpg")
+                    .row
+                        img.img-responsive.mg-auto(src="../image/logo_aweita.jpg")
                     +clases
                     +clases
                     p.text-center Más en<spam> Aweita.pe </spam>
             .row#mi-lineaplo
                 .etiqueta 
                     h4 FOTOS DESTACADAS
-                img(src="../image/img_fotodes_prominent.jpg")
+                img.img-responsive(src="../image/img_fotodes_prominent.jpg")
                 p Lineas de Nasca: admiten prisión preventiva de 6 meses para activista de Greenpeace/FOTOS
                 +aweita('../image/noticias-relacionadas-image-slider-thumb.jpg','Uchuraccay:El pueblo que recibe con flores a quienes llegan a pie | FOTOS')
                 +aweita('../image/noticias-relacionadas-image-slider-thumb.jpg','Alianza Lima vs Fénix: intimos ganaron 1-0 en"Noche Blanquiazul" | VIDEO Y FOTOS')
@@ -98,7 +99,7 @@ block content
                 .etiqueta 
                     h4 CARLINCATURA DEL DÍA
                 h4<strong> Carlincaturas 30-01-2015</strong>
-                img(src="../image/img_carlincatura_sd.jpg")
+                img.img-responsive(src="../image/img_carlincatura_sd.jpg")
                 p Todas las Carlincaturas
             .row#mi-lineaplo
                 .etiqueta 
@@ -112,7 +113,7 @@ block content
                     h4 EDICIÒN IMPRESA
                 div
                     h5 República-Lima
-                    img(src="../image/img_impreso_sd_prominent.jpg")
+                    img.img-responsive(src="../image/img_impreso_sd_prominent.jpg")
                     .row
                         +periodicos('../image/img_impreso_sd.jpg','Extorcion en menores en colegio','Republica-Norte')
                     .row
