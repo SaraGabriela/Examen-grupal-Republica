@@ -11,19 +11,19 @@ block content
         ul.list-inline.list-unstyled.text-center
             li
                 a(href="#")
-                    img(src="../image/face.png")
+                    img.img-responsive(src="../image/face.png")
             li
                 a(href="#")
-                    img(src="../image/twitter.png")
+                    img.img-responsive(src="../image/twitter.png")
             li
                 a(href="#")
-                    img(src="../image/google.png")
+                    img.img-responsive(src="../image/google.png")
             li
-                img(src="../image/bullet.gif")
+                img.img-responsive(src="../image/bullet.gif")
             li
                 p.plomo Hace 12 minutos
             li
-                img(src="../image/bullet.gif")
+                img.img-responsive(src="../image/bullet.gif")
             li
                 p.plomo POLÍTICA
         .col-md-6
@@ -66,23 +66,23 @@ block content
                 +ultimas
         .col-md-4.quitar
             .row
-                img(src="../image/banner-aside-home.jpg")
+                img.img-responsive(src="../image/banner-aside-home.jpg")
             .row.text-center
-                img(src="../image/img_sucribe.png")
+                img.img-responsive(src="../image/img_sucribe.png")
                 .div
                     p <strong>Suscribete </strong> a nuestro boletin
                     input.form-control.tamano(type='text')
                     button.btn.btn-sm SUSCRIBIRSE
             .row
                 .borderaweita
-                    img.text-center(src="../image/logo_aweita.jpg")
+                    img.img-responsive.text-center(src="../image/logo_aweita.jpg")
                     +clases
                     +clases
                     p.text-center Más en<spam> Aweita.pe </spam>
             .row#mi-lineaplo
                 .etiqueta 
                     h4 FOTOS DESTACADAS
-                img(src="../image/img_fotodes_prominent.jpg")
+                img.img-responsive(src="../image/img_fotodes_prominent.jpg")
                 p Lineas de Nasca: admiten prisión preventiva de 6 meses para activista de Greenpeace/FOTOS
                 +aweita('../image/noticias-relacionadas-image-slider-thumb.jpg','Uchuraccay:El pueblo que recibe con flores a quienes llegan a pie | FOTOS')
                 +aweita('../image/noticias-relacionadas-image-slider-thumb.jpg','Alianza Lima vs Fénix: intimos ganaron 1-0 en"Noche Blanquiazul" | VIDEO Y FOTOS')
@@ -98,7 +98,7 @@ block content
                 .etiqueta 
                     h4 CARLINCATURA DEL DÍA
                 h4<strong> Carlincaturas 30-01-2015</strong>
-                img(src="../image/img_carlincatura_sd.jpg")
+                img.img-responsive(src="../image/img_carlincatura_sd.jpg")
                 p Todas las Carlincaturas
             .row#mi-lineaplo
                 .etiqueta 
@@ -112,7 +112,7 @@ block content
                     h4 EDICIÒN IMPRESA
                 div
                     h5 República-Lima
-                    img(src="../image/img_impreso_sd_prominent.jpg")
+                    img.img-responsive(src="../image/img_impreso_sd_prominent.jpg")
                     .row
                         +periodicos('../image/img_impreso_sd.jpg','Extorcion en menores en colegio','Republica-Norte')
                     .row
@@ -135,24 +135,24 @@ block content
                     +pregunta2("La pregunta de ayer", "¿Cree usted que se militarizó la conmemoración del fallo de la Haya en Lima?", "../image/porcentaje.jpg", "Ver preguntas pasadas")
             .row.libero.borde.mg-top2
                 img.img-responsive.mg-auto.pd(src="../image/logo_libero.jpg")
-                +foto-img("../image/deporte_1.png", "Fiorentina 1-1 en su visita a Génova con Juan Vargas-VIDEO")
-                +foto-img("../image/deporte_2.png", "Farfan: Salke no sabe cuando volvera a las canchas-FOTOS")
-                +foto-img("../image/deporte_1.png", "Barcelona vs Villarreal: gano con soles 2-3 de Neymar-VIDEO")
-                +foto-img("../image/deporte_2.png", "Perú cayó 3-1 ante Colombia por el hexagono final Sub 20-VIDEO", "Libero.pe")
+                +foto-img("../image/deporte_1.png", "Fiorentina 1-1 a Génova con Juan Vargas -VIDEO")
+                +foto-img("../image/deporte_2.png", "Farfan: no sabe cuando volvera a las canchas-FOTOS")
+                +foto-img("../image/deporte_1.png", "Barcelona vs Villarreal: con soles 2-3 de Neymar-VIDEO")
+                +foto-img("../image/deporte_2.png", "Perú cayó 3-1 ante Colombia por el final Sub 20-VIDEO", "Libero.pe")
                 hr.hr3
             .row.popular.borde.mg-top2
                 img.img-responsive.mg-auto.pd(src="../image/logo_popular.jpg")
-                +foto-img("../image/popular_1.png","Joshua Ivanof está loco por olor e imagen de Melissa Loza")
-                +foto-img("../image/popular_2.png","Corintians:Paolo Guerrero le dedica su gol a su Alondra García")
-                +foto-img("../image/popular_1.png","Angie Arizaga es amenazada de muerte y pone una firme denuncia")
-                +foto-img("../image/popular_2.png","Philips Hoffman Seymour: un año sin el premiado actor", "elPopular.pe")
+                +foto-img("../image/popular_1.png","Joshua Ivanof está loco por olor de Melissa Loza")
+                +foto-img("../image/popular_2.png","Corintians: Paolo Guerrero le dedica gol a Alondra")
+                +foto-img("../image/popular_1.png","Angie Arizaga es amenazada de muerte y lo denuncia")
+                +foto-img("../image/popular_2.png","Philips Seymour: un año sin el premiado actor", "elPopular.pe")
                 hr.hr4
             .row.wapa.borde.mg-top2
                 img.img-responsive.mg-auto.pd(src="../image/logo_wapa.jpg")
                 +foto-img("../image/wapa_3.png", "¿Cómo renovar el guardaropa de los más pequeños?")
                 +foto-img("../image/wapa_1.png", "Shakira y Piquè ya son padres por segunda vez")
                 +foto-img("../image/wapa_3.png", "Ted 2: mira el trailer de la cinta que ya esta por salir")
-                +foto-img("../image/wapa_2.png", "¿Como usar los zapatos altos sin dolor? Aprende unos tips", "Wapa.pe")
+                +foto-img("../image/wapa_2.png", "¿Como usar los zapatos altos sin dolor?", "Wapa.pe")
                 hr.hr3
             .row.reportero.pd-all-fondo.mg-top2
                 div.pd-all.bg-white.mg-botton
