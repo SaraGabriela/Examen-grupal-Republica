@@ -109,6 +109,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100px;
   margin: auto; }
 
+.hr5 {
+  border: 3px solid #872F85;
+  width: 100px;
+  margin: auto; }
+
 .borde {
   border: 2px solid #F5F5F5; }
 
@@ -529,8 +534,11 @@ hr {
 .margint {
   margin: 2% 0%; }
 
+.maegin6 {
+  margin: 6% 0%; }
+
 .padding22 {
-  padding: 2% 0%; }
+  padding: 2%; }
 
 .margin15 {
   margin-top: 13%; }
@@ -540,6 +548,13 @@ hr {
 
 .cont_img {
   position: relative; }
+
+.colum {
+  max-width: 50%;
+  margin: auto;
+  margin-top: -95px;
+  padding: 2%;
+  margin-bottom: -3%; }
 
 #mi-linearo {
   border-top: 7px solid #B20000;
@@ -596,6 +611,9 @@ hr {
 
 .etiqueta {
   text-align: center; }
+
+.c_morado {
+  color: #872F85; }
 
 .pie-pagina {
   background-color: #F5F5F5; }

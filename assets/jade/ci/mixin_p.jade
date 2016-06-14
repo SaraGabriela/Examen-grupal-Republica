@@ -6,14 +6,9 @@ mixin noticias(titulo,imgn,text,resena)
 			h4.blanco=text
 		p.text-center=resena
 mixin foto_columnista(img,text,texts)
-	.contenedor_columnistas.inline-block.list
-		img.img-responsive.img_bor(src=img)
-		p=text
-		h6=texts
-mixin foto_colum
-	+foto_columnista('../image/img-columnistas.jpg','Mario Vargas LLosa','Megarrenuncia apulpinante')
-	+foto_columnista('../image/img_blogueros.jpg','Agusto Alvarez Rodrich','Megarrenuncia apulpinante')
-
+	img.img-responsive.img_bor.mg-auto(src=img)
+	p.mg.fs-10=text
+	p.fs-10=texts
 mixin ultimas_n(fecha,titulo,img,lead,face,twitter,google,punto1,comentario,numero,punto2,clase,punto3,simbolo)
 	.row.ml-0.relative
 		p=fecha
