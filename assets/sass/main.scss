@@ -105,23 +105,23 @@ box-shadow: inset 0px -46px 54px -2px rgba(38,35,38,0.49);}
 	}
 	.footer{
 		.colum-logo{padding:10px 15px;}
-		p{text-align:center;}}}
-
-	//patty
-@media screen and(min-width:750px){
+		p{text-align:center;}}
 	.border_p{
 		img{width:100%;}
-		.blanco{font-size:43px;}
+		.blanco{font-size:16px;}
 	}
 	.contenedor_columnistas
 			{img{width: 30%;}}
 	.colum{
-		h4{width:100%;
-			font-size: 30px;}
+		margin-top: 15px;
+		h4{max-width:150%;
+			font-size: 14px;}
 	}
 	.noticias_centrales{
 		.imagen_media{width:100%;}
 		p{font-size:10px;}
 	}
+	.particular{display:none;}
 	}
-	
+
+	//patty
