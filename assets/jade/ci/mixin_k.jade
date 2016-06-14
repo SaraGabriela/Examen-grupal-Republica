@@ -3,7 +3,7 @@ mixin footer(img,h4,p1,p2,p3,p4)
 		.container-fluid
 			.footer
 				.fila.pd.col-md-8.col-md-offset-2
-					.col-md-3.pd-top-all
+					.col-md-3.pd-top-all.colum-logo
 						img.img-responsive(src=img)
 						h4.text-center 
 							strong=h4
@@ -13,7 +13,7 @@ mixin footer(img,h4,p1,p2,p3,p4)
 						p=p4
 					.col-md-9.b-left
 						.row
-							.col-md-3
+							.col-md-3.hidden-xs
 								ul.pd-left.font-text
 									li
 										a.color-n(href="#") Roger Federer
@@ -57,7 +57,7 @@ mixin footer(img,h4,p1,p2,p3,p4)
 										a.color-n(href="#") Xbox
 									li 
 										a.color-n(href="#") BCP
-							.col-md-3
+							.col-md-3.hidden-xs
 								ul.pd-left.font-text
 									li 
 										a.color-n(href="#") Al fondo hay sitio
@@ -101,7 +101,7 @@ mixin footer(img,h4,p1,p2,p3,p4)
 										a.color-n(href="#") Xbox
 									li 
 										a.color-n(href="#") BCP
-							.col-md-3
+							.col-md-3.hidden-xs
 								ul.pd-left.font-text
 									li 
 										a.color-n(href="#") One Direction
@@ -149,7 +149,7 @@ mixin footer(img,h4,p1,p2,p3,p4)
 										a.color-n(href="#") Reniec
 									li 
 										a.color-n(href="#") Robert Pattinson
-							.col-md-3
+							.col-md-3.hidden-xs
 								ul.pd-left.font-text
 									li 
 										a.color-n(href="#") Al fondo hay sitio
@@ -193,15 +193,14 @@ mixin footer(img,h4,p1,p2,p3,p4)
 										a.color-n(href="#") Xbox
 									li 
 										a.color-n(href="#") BCP
-	hr.hr
+	hr.hr.hidden-xs
 	.bg-fondo.bg-fondo
 		.container-fluid
-			.pie-pagina
+			.pie-pagina.hidden-xs
 				.fila.pd.col-md-8.col-md-offset-2
 					ul.list-inline.text-center
 						-
-							list = ["Diarios del PAL", "Clarin", "El Universal Colombia", "Clarin",
-									"El Universal Venezuela", "Vanguardia", "La Prensa", "El Salvador", "La Verdad", "Diario Libre", "El Colombiano"]
+							list = ["Diarios del PAL", "Clarin", "El Universal Colombia","El Universal Venezuela", "Vanguardia", "La Prensa", "El Salvador", "La Verdad", "Diario Libre"]
 					each item in list
 						li.b-right= item
 mixin edicion(img,h5,a)

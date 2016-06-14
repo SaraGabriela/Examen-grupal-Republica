@@ -15,7 +15,7 @@ block content
 				input(type="text" placeholder="Correo Electrónico" class="escribir")
 				input(type="text" placeholder="Teléfono" class="escribir")
 				h4 Elija un destinatario
-				.row
+				.row.input-radio
 					.col-md-6
 						input(type='radio', name='transporte', value='1')
 						| 	Sujerencia para el sitio web
@@ -35,7 +35,7 @@ block content
 						input(type='radio', name='transporte', value='6')
 						| 	Archivo periodística
 					.col-md-6
-						ul.pd-0.mg-top
+						ul.pd-0.mg-top.hidden-xs
 							li.ej.pull-right.fs-12 (Ej: funcionamiento y mejoras para el sitio)
 							li.ej.pull-right.fs-12 (Ej: sugerencias para las notas de prensa)
 							li.ej.pull-right.fs-12 (Ej: publicidad en diarios o sitios web)
