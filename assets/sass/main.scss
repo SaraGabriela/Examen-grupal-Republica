@@ -102,8 +102,15 @@ box-shadow: inset 0px -46px 54px -2px rgba(38,35,38,0.49);}
 	.contact{
 		.escribir{padding:5px;}
 		.input-radio{margin-left:40px;}
-	}}
+	}
 	.footer{
 		.colum-logo{padding:10px 15px;}
-		p{text-align:center;}
+		p{text-align:center;}}}
+
+	//patty
+@media (max-width: 750px){
+	.principal{
+		.cont_img > img{margin: 0% 13%;}
+		.blanco{font-size:25px;margin: 0% 13%;}
+		}
 	}
