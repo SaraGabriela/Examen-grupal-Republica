@@ -10,14 +10,14 @@ mixin foto_columnista(img,text,texts)
 	p.mg.fs-10=text
 	p.fs-10=texts
 mixin ultimas_n(fecha,titulo,img,lead,face,twitter,google,punto1,comentario,numero,punto2,clase,punto3,simbolo)
-	.row.ml-0.relative
+	.row.ml-0.relative.noticias_centrales
 		p=fecha
 		h3=titulo
 		.col-md-4.padding
-			img.img-responsive(src=img)
+			img.img-responsive.imagen_media(src=img)
 		.col-md-8
 			p=lead
-			ul.list-inline.list-unstyled.absolute
+			ul.list-inline.list-unstyled.absolute.hidden-xs
 				li
 					img.img-responsive(src=face)
 				li
