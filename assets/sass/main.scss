@@ -108,9 +108,10 @@ box-shadow: inset 0px -46px 54px -2px rgba(38,35,38,0.49);}
 		p{text-align:center;}}}
 
 	//patty
-@media (max-width: 750px){
+@media screen and(max-width:750px){
 	.principal{
 		.cont_img > img{margin: 0% 13%;}
-		.blanco{font-size:25px;margin: 0% 13%;}
+		.blanco{font-size:25px; margin: 0% 13%;}
 		}
+	.absolute{margin: 3% 0%;font-size:x-large;}
 	}

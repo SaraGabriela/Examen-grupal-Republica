@@ -676,9 +676,12 @@ hr {
   .footer p {
     text-align: center; } }
 
-@media (max-width: 750px) {
+@media screen and (max-width: 750px) {
   .principal .cont_img > img {
     margin: 0% 13%; }
   .principal .blanco {
     font-size: 25px;
-    margin: 0% 13%; } }
+    margin: 0% 13%; }
+  .absolute {
+    margin: 3% 0%;
+    font-size: x-large; } }
