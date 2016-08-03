@@ -8,7 +8,7 @@ block domingo
 block content
     .row
         h1.text-center GUERRA EN LA MUNICIPALIDAD DE LIMA METROPOLITANAA
-        ul.list-inline.list-unstyled.text-center
+        ul.list-inline.list-unstyled.text-center.hidden-xs
             li
                 a(href="#")
                     img.img-responsive(src="../image/face.png")
@@ -26,23 +26,30 @@ block content
                 img.img-responsive(src="../image/bullet.gif")
             li
                 p.plomo POLÍTICA
-        .col-md-6.mg-auto
+    .row.principal
+        .col-md-6.margint
             +noticias('','../image/img_grid_principal.jpg','JNE impulsará campaña en favor de la aprobación de la Reforma Electoral')
-        .col-md-6
+        .col-md-6.margint
             .row
                 +noticias('','../image/imagen-martin-belaunde.jpg','Martín Belaunde Lossio:Empresas vinculadas al empresario contrataron por S/.3 000 millones | FOTOS')
             .row
                 +noticias('','../image/peru vs paraguay.jpg','Sub 20:Perú vs. Paraguay:bicolor empató 1-1 y pasó al hexagonal final del Sudamericano | VIDEO')
     .row.text-center.fondo_columnistas#mi-linearo
-        .etiqueta
-            h4 COLUMNISTAS
-        ul.list-inline.list-unstyled
-            li
-                +foto_colum
-            li
-                +foto_colum
-            li
-                +foto_colum
+        .etiqueta.colum
+            h4 COLUMNISTA
+        .contenedor_columnistas.row
+            .col-md-2.text-center
+                +foto_columnista('../image/img-columnistas.jpg','Mario Vargas LLosa','Megarrenuncia apulpinante')
+            .col-md-2              
+                +foto_columnista('../image/img_blogueros.jpg','Agusto Alvarez Rodrich','Megarrenuncia apulpinante')
+            .col-md-2
+                +foto_columnista('../image/img-columnistas.jpg','Mario Vargas LLosa','Megarrenuncia apulpinante')
+            .col-md-2              
+                +foto_columnista('../image/img_blogueros.jpg','Agusto Alvarez Rodrich','Megarrenuncia apulpinante')
+            .col-md-2
+                +foto_columnista('../image/img-columnistas.jpg','Mario Vargas LLosa','Megarrenuncia apulpinante')
+            .col-md-2              
+                +foto_columnista('../image/img_blogueros.jpg','Agusto Alvarez Rodrich','Megarrenuncia apulpinante')
     .row
         .col-md-8
             .row.margint
@@ -64,23 +71,26 @@ block content
                 +ultimas
                 +ultimas
                 +ultimas
+                +ultimas
+                +ultimas
+                +ultimas           
         .col-md-4.quitar
             .row
                 img.img-responsive(src="../image/banner-aside-home.jpg")
             .row.text-center.formato.padding22
                 img.img-responsive.mg-auto(src="../image/img_sucribe.png")
-                .div
+                .bg-white
                     p <strong>Suscribete </strong> a nuestro boletin
                     input.form-control.tamano(type='text')
                     button.btn.btn-sm SUSCRIBIRSE
             .row
                 .borderaweita
-                    img.img-responsive.text-center(src="../image/logo_aweita.jpg")
                     .row
                         img.img-responsive.mg-auto(src="../image/logo_aweita.jpg")
                     +clases
                     +clases
-                    p.text-center Más en<spam> Aweita.pe </spam>
+                    p.c_morado.text-center Más en<spam> Aweita.pe </spam>
+                    hr.c_morado.hr5
             .row#mi-lineaplo
                 .etiqueta 
                     h4 FOTOS DESTACADAS
@@ -102,14 +112,14 @@ block content
                     h4 CARLINCATURA DEL DÍA
                 h4<strong> Carlincaturas 30-01-2015</strong>
                 img.img-responsive(src="../image/img_carlincatura_sd.jpg")
-                p Todas las Carlincaturas
+                p.text-center.rojo.maegin6 Todas las Carlincaturas
             .row#mi-lineaplo
                 .etiqueta 
                     h4 NUESTROS BLOGUEROS
                 div
                     +bloguer
                     +bloguer
-                    h6.text-center Todos los Blogs
+                    h4.text-center.rojo.maegin6 Todos los Blogs
             .row#mi-linearo
                 .etiqueta 
                     h4 EDICIÒN IMPRESA
@@ -165,3 +175,5 @@ block content
                 p.text-center
                     strong
                         a.c_rojo(href="#") Más fotos
+block footer
+    +footer("../image/logo-grupo-la-republica.png",'Grupo La República Digital','Jirón Camaná 320 Cercado de Lima','Teléfono: 711-6000','(Central Telefónica)','Todos los derechos reservados-2015')
