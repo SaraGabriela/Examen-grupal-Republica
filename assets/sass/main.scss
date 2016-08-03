@@ -22,12 +22,10 @@ hr{margin:0px;}
 .tamano{width: 80%;margin-left:11%;}
 .fondo_columnistas{background: #F2F2F2}
 .margint{margin: 2% 0%;}
-<<<<<<< HEAD
 .padding22 {padding:2% 0%;}
 .margin15{margin-top: 15%;}
 .border_p{border:1px solid #CDCDCD;}
 .cont_img{position: relative; background:linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(18,18,18,1) 100%);}
-=======
 .maegin6{margin: 6% 0%;}
 .padding22 {padding:2%;}
 .margin15{margin-top: 13%;}
@@ -36,7 +34,6 @@ hr{margin:0px;}
 .colum{max-width: 50%;margin: auto;
 		margin-top: -95px;padding:2%;
 		margin-bottom: -3%;}
->>>>>>> 7caf885c9c82ca7206e3e0a7873dbadb092fff33
 @mixin nombre($color){
 	border-top: 7px solid $color;
 }
@@ -128,13 +125,7 @@ hr{margin:0px;}
 	.noticias_centrales{
 		.imagen_media{width:100%;}
 		p{font-size:10px;}
-	}
-	}
-<<<<<<< HEAD
+
 // ---responsive--footer
 @media screen and(max-width:750px){
 
-}
-=======
-	
->>>>>>> 7caf885c9c82ca7206e3e0a7873dbadb092fff33
